@@ -1,0 +1,169 @@
+
+:root {
+    --pink-color: #ea4c89; /* ضع كود اللون هنا */
+    --gray-colour: #c9c3c3; /* ضع كود اللون هنا */
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* font */
+.mona-sans {
+    font-family: "Mona Sans", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+.pacifico-regular {
+    font-family: "Pacifico", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+
+a {
+    text-decoration: none; 
+    color: var(--pink-color); 
+    
+}
+.container{
+    width: 100%;
+    padding-bottom: 20px;
+    background-color: white;
+    position: sticky;
+    left: 0;
+    right: 0;
+    top: 0;
+    
+}
+.content{
+    height: 80px;
+    margin: 20px 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.text{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    margin-right: 12px;
+}
+.text-content{
+    margin: 0 20px ;
+   
+}
+.text-content p{
+    margin: 0;
+}
+.text-content-paragraph{
+    font-size: 20px;
+    font-weight: 500;
+}
+.text-content-lank{
+    font-size: 14px;
+    font-weight: 400;
+}
+.image{
+    width: 80px;
+    height: 100%;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+.image-img{
+    width: 100%;
+    border-radius: 10px;
+    border: solid 2px var(--pink-color) ;
+}
+
+
+
+.with-by::before {
+    content: "by ";
+    font-weight: 500; 
+    font-size: 16px;
+    color: var(--gray-colour); 
+  }
+  /* .::before, */
+  .section::after {
+    content: ""; /* لا يوجد نص، فقط خط */
+    position: absolute; /* لجعل الخط يتموضع بشكل مستقل */
+    height: 2px; /* ارتفاع الخط */
+    background-color: var(--gray-colour); /* لون الخط */
+    width: 95%; /* عرض الخط بطول كامل النافذة */
+    right: 2.5%;
+    /* top: 120px;     */
+}
+
+.container-body{
+    width: 90%;
+    margin: 0 auto;
+    
+}
+.container-body img{
+    width: 100%;
+
+}
+
+
+/*  */
+
+@media (max-width: 1100px) {
+    .container{
+        height: 100px;
+    }
+
+    .section::after {
+        top: 100px;
+    }
+}
+@media (max-width: 900px) {
+    .logo{
+        display: none;
+    }
+  
+}
+
+/* @media (max-width: 768px) {
+    .container{
+        height: 130px;
+    }
+    
+    .image{
+        padding: 15px;
+    }
+    .text-content-paragraph {
+        font-size: 18px;
+    }
+   
+    .section::after {
+        top: 100px;
+    }
+} */
+
+@media (max-width: 500px) {
+    .container{
+        height: 190px;
+    }
+    .content {
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    .section::after {
+        top: 175px;
+    }
+}
+@media (max-width: 320px) {
+    .container{
+        height: 175px;
+    }
+    .section::after {
+        top: 175px;
+    }
+}
